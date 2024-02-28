@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+        <div class="logo">Pranav Modi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Pranav Modi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assests/profile_2.png" alt="Pranav Modi profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'am</p>
+        <h1 class="title">Pranav Modi</h1>
+        <div class="btn_container">
+          <button class="btn btn-color-2" onclick="location.href='./#projects'">
+            Explore
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img 
+            src="assests/linkedin.png" 
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/pranav-modi-960b67240/'"/>
+          <img 
+            src="assests/github.png" 
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Pranavmodi0?tab=repositories'"/>
+          <img 
+            src="assests/leetcode logo.png" 
+            alt="My Leetcode profile"
+            class="icon"
+            onclick="location.href='https://leetcode.com/pranavmodi1/'"/>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img 
+            src="assests/profile-3.png" 
+            alt="Profile picture"
+            class="about-pic"
+            />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img 
+              src="assests/experience.png" 
+              alt="Experience icon"
+              class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Fresher</p>
+            </div>
+          <div class="details-container">
+            <img 
+              src="assests/education.png" 
+              alt="Education icon"
+              class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E Computer Science(AI&ML)<br /> Mumbai University(SSPM COE)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Highly motivated and fast-learning fresher with foundational skills in Android development (Java, Kotlin, XML),
+              data analysis (tableau, MySQL, PowerBI), and AI/ML (exposure to TensorFlow, Colab). Eager to apply these skills to contribute to the development of innovative solutions. Persuing B.E in Computer Science(AI&ML) with a focus on mobile development and data science.Successfully developed an Android apps, achieving a 20% increase in user engagement. Passionate about learning and contributing to the cutting edge of technology.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img 
+        src="assests/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>JAVA</h3>
+                    <p>(Experienced)</p>
+                  </div>
+              </article>
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>Kotlin</h3>
+                    <p>(Beginner)</p>
+                  </div>
+              </article>
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>(Beginner)</p>
+                  </div>
+              </article>
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>C#</h3>
+                    <p>(Beginner)</p>
+                  </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend</h2>
+            <div class="article-container">
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>XML</h3>
+                    <p>(Experienced)</p>
+                  </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend</h2>
+            <div class="article-container">
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>Firebase</h3>
+                    <p>(Experienced)</p>
+                  </div>
+              </article>
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>My SQL</h3>
+                    <p>(Beginner)</p>
+                  </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Primary Tools</h2>
+            <div class="article-container">
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>Android Studio(SDK)</h3>
+                    <p>(Experienced)</p>
+                  </div>
+              </article>
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>Tableau</h3>
+                    <p>(Intermediate)</p>
+                  </div>
+              </article>
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>Excel</h3>
+                    <p>(Intermediate)</p>
+                  </div>
+              </article>
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>Unity</h3>
+                    <p>(Beginner)</p>
+                  </div>
+              </article>
+              <article>
+                <img 
+                  src="./assests/checkmark.png" 
+                  alt="Experience icon"
+                  class="icon"
+                  />
+                  <div>
+                    <h3>Canva</h3>
+                    <p>(Intermediate)</p>
+                  </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img 
+        src="assests/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+              src="./assests/OnlyModiart.png" 
+              alt="OnlyModi"
+              class="project-img"
+              />
+          </div>
+          <h2 class="experience-sub-title project-title">OnlyModi</h2>
+          <div class="btn-container">
+            <button 
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://play.google.com/store/apps/details?id=com.grocery.onlymodi&hl=en&gl=US'"
+              />
+              Playstore
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+              src="./assests/exp_2.png" 
+              alt="Eternal Dash"
+              class="project-img"
+              />
+          </div>
+          <h2 class="experience-sub-title project-title">Eternal Dash</h2>
+          <div class="btn-container">
+            <button 
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://play.google.com/store/apps/details?id=com.eternaldash.onlymodi&hl=en&gl=US'"
+              />
+              Playstore
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <img 
+        src="assests/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+              src="./assests/project_1.png" 
+              alt="Project 1"
+              class="project-img"
+              />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <p>An Blood Donation app which will be useful for the
+            urgent blood needy people to find available donors
+            and recipient in their nearby area and get touch with
+            them.</p>
+          <div class="btn-container">
+            <button 
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Pranavmodi0/Blood-charity-App'"
+              />
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+              src="./assests/project_2.png" 
+              alt="Project 2"
+              class="project-img"
+              />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <p>An ChatBot android app with ChatGPT (OpenAI)
+            API Integration. Reply’s ever query and also
+            generates Images with 50% accuracy.
+            </p>
+          <div class="btn-container">
+            <button 
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Pranavmodi0/Concise-AI---Chat-with-GPT'"
+              />
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <img 
+        src="assests/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img 
+              src="./assests/email.png" 
+              alt="Email icon"
+              class="icon contact-icon"
+              />
+              <p><a href="mailto:pranavmodi64@gmail.com">Gmail</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img 
+              src="./assests/linkedin.png" 
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+              />
+              <p><a href="https://www.linkedin.com/in/pranav-modi-960b67240/">LinkedIn</a></p>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Pranav Modi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
